@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps</xpath>
+				<value>
+					<li Class="DubsBadHygiene.CompProperties_Pipe">
+						<mode>Sewage</mode>
+					</li>
+					<li Class="AlternativePowerSolutions.CompProperties_WaterConsumer">
+						<waterPerTick>0.2</waterPerTick>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

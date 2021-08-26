@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<APS.MustBeBuiltOnDeepOceanWater>Must be built on deep ocean water</APS.MustBeBuiltOnDeepOceanWater>
+	<APS.WaterConsumptionPerSecond>Water consumption per second: {0} L</APS.WaterConsumptionPerSecond>
+</LanguageData>
