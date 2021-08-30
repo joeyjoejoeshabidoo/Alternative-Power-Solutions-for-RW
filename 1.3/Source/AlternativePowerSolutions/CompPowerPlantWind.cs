@@ -152,12 +152,12 @@ namespace AlternativePowerSolutions
 
 		[TweakValue("APSGraphics", -10f, 10f)] private static float YOffset = -0.02f;
 
-		[TweakValue("APSGraphics", -10f, 10f)] private static float HorizontalBladeOffsetEast = -0.02f;
+		[TweakValue("APSGraphics", -10f, 10f)] private static float HorizontalBladeOffsetEast = -1.7f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float HorizontalBladeOffsetWest = 1.7f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float HorizontalBladeOffsetNorth = -0.02f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float HorizontalBladeOffsetSouth = 0.01f;
 
-		[TweakValue("APSGraphics", -10f, 10f)] private static float VerticalBladeOffsetEast = 0.7f;
+		[TweakValue("APSGraphics", -10f, 10f)] private static float VerticalBladeOffsetEast = 2.3f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float VerticalBladeOffsetWest = 2.3f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float VerticalBladeOffsetNorth = 4.5f;
 		[TweakValue("APSGraphics", -10f, 10f)] private static float VerticalBladeOffsetSouth = -0.25f;

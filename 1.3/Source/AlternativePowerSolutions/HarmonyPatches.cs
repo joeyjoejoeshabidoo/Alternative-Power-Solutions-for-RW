@@ -37,11 +37,16 @@ namespace AlternativePowerSolutions
 
                     }
                 }
+                var nuclearPlantMethod = AccessTools.Method("CompPowerPlantNuclear:get_DesiredPowerOutputAndRadius");
+                if (nuclearPlantMethod != null)
+                {
+                    harmony.Patch(nuclearPlantMethod, postfix: new HarmonyMethod(methodToCall));
+                }
             });
         }
 
-        private static Dictionary<CompPowerPlant, CompWaterConsumer> cachedComps = new Dictionary<CompPowerPlant, CompWaterConsumer>();
-        public static void DesiredPowerOutputPostfix(CompPowerPlant __instance, ref float __result)
+        private static Dictionary<CompPowerTrader, CompWaterConsumer> cachedComps = new Dictionary<CompPowerTrader, CompWaterConsumer>();
+        public static void DesiredPowerOutputPostfix(CompPowerTrader __instance, ref float __result)
         {
             if (!cachedComps.TryGetValue(__instance, out var comp))
             {

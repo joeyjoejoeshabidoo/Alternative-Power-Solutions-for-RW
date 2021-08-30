@@ -22,13 +22,13 @@ namespace AlternativePowerSolutions
     {
         private CompPipe compPipe;
 
-        private CompPowerPlant compPower;
+        private CompPowerTrader compPower;
         public CompProperties_WaterConsumer Props => base.props as CompProperties_WaterConsumer;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
             compPipe = this.parent.GetComp<CompPipe>();
-            compPower = this.parent.GetComp<CompPowerPlant>();
+            compPower = this.parent.GetComp<CompPowerTrader>();
         }
         public override void CompTick()
         {
