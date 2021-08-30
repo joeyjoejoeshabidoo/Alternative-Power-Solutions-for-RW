@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<!-- Concentrated Solar Power Station -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Glass+Lights</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "APS_ConcentratedSolarPowerStation"]/costList</xpath>
+				<value>
+					<costList>
+					<Steel>1000</Steel>
+					<VMEu_Concrete>100</VMEu_Concrete>
+					<Glass>200</Glass>
+					<ComponentIndustrial>30</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

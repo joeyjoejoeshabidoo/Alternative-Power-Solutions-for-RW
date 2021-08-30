@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<!-- Offshore Turbines -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Expanded Materials - Plastics</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "APS_OffshoreWindTurbine"]/costList</xpath>
+				<value>
+					<costList>
+					<Steel>60</Steel>
+					<VMEu_StainlessSteel>50</VMEu_StainlessSteel>
+					<VMEu_PlasticPellets_TierTwo>60</VMEu_PlasticPellets_TierTwo>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
