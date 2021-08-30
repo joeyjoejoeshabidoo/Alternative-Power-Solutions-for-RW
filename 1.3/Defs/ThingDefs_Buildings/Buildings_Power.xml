@@ -5,8 +5,8 @@
 		<defName>APS_OffshoreWindTurbine</defName>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<label>offshore wind turbine</label>
-		<description>A wind-powered electrical generator. Requires a large clear space in front and behind for optimal air flow.</description>
+		<label>Offshore wind turbine</label>
+		<description>Modern materials allow the construction of larger, more efficient turbines. On land, few regions are home to winds capable of justifying these massive turbines but the strength of offshore winds and endless open water ensure many colonies turn to the sea for their power.</description>
 		<graphicData>
 			<texPath>Things/Building/Power/OffshoreWindTurbine/OffshoreWindTurbine</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -45,7 +45,7 @@
 		<costList>
 			<Steel>120</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
-			<VMEu_PlasticPellets_TierTwo>50</VMEu_PlasticPellets_TierTwo>
+			<VMEu_StainlessSteel>50</VMEu_StainlessSteel>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<placeWorkers>
@@ -68,8 +68,8 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>APS_ConcentratedSolarPowerStation</defName>
-		<label>concentrated solar power station</label>
-		<description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+		<label>Concentrated solar power station</label>
+		<description>By pointing a massive array of mirrors toward a central tower we can generate constant heat and in turn, energy. A colony utilising this technology will find it more reliable than solar panels as the heat contained will remain for hours into the night. However, the structure is time consuming to build and will require constant water flow to function.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -84,8 +84,8 @@
 		<fillPercent>0.5</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>25000</WorkToBuild>
 			<Flammability>0.7</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
@@ -94,8 +94,9 @@
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
 		<costList>
-			<Steel>100</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>1200</Steel>
+			<VMEu_Concrete>100</VMEu_Concrete>
+			<ComponentIndustrial>30</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -117,14 +118,15 @@
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>SolarPanels</li>
+			<li>LargeWaterPumps</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>APS_EnhancedGeothermalSystem</defName>
-		<label>enhanced geothermal system</label>
-		<description>Produces electricity from geothermal steam geysers. Must be placed on a steam geyser.</description>
+		<label>Enhanced geothermal system</label>
+		<description>The core of this world is a source of limitless power previously only accessable through steam vents. By drilling and pumping water deep underground we can produce power anywhere. This will require constant water flow to maintain power and may enrage any insectoids beneath us.</description>
 		<thingClass>Building</thingClass>
 		<tickerType>Normal</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -132,10 +134,6 @@
 			<texPath>Things/Building/Power/EnhancedGeothermalSystem</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6,6)</drawSize>
-			<shadowData>
-				<volume>(6.03,1.0,5.25)</volume>
-				<offset>(0,0,-0.25)</offset>
-			</shadowData>
 			<damageData>
 				<rect>(0.3,0,5.4,6)</rect>
 			</damageData>
@@ -187,6 +185,7 @@
 		<designationHotKey>Misc6</designationHotKey>
 		<researchPrerequisites>
 			<li>GeothermalPower</li>
+			<li>DeepDrilling</li>
 			<li>DeepWells</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -195,8 +194,8 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>APS_CoalPoweredGenerator</defName>
-		<label>coal powered generator</label>
-		<description>Produces power by consuming coal. Must be periodically refueled by hand.</description>
+		<label>Coal-fired power station</label>
+		<description>Burning fuel on its own is an inefficient process. Instead by pumping water above the furnace we may create steam to turn our turbines. This plant must be periodically refueled and requires a constant supply of water to boil.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
