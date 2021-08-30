@@ -18,9 +18,9 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>Argon.VMEuP</packageId>
-			<displayName>Expanded Materials - Plastics</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117</steamWorkshopUrl>
+			<packageId>Argon.VMEu</packageId>
+			<displayName>Expanded Materials - Metals</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
@@ -29,7 +29,7 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>       
 		<li>Dubwise.DubsBadHygiene</li>
-		<li>Argon.VMEuP</li>
+		<li>Argon.VMEu</li>
 	</loadAfter>
-	<description>Placeholder</description>
+	<description>Alternative power plants to keep the lights on as long as you keep the water running.</description>
 </ModMetaData>
