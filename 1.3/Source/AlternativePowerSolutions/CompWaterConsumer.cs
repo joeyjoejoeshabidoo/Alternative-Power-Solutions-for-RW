@@ -23,17 +23,19 @@ namespace AlternativePowerSolutions
         private CompPipe compPipe;
 
         private CompPowerTrader compPower;
+        private CompWaterPoweredGasTrader compGas;
         public CompProperties_WaterConsumer Props => base.props as CompProperties_WaterConsumer;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
             compPipe = this.parent.GetComp<CompPipe>();
             compPower = this.parent.GetComp<CompPowerTrader>();
+            compGas = this.parent.GetComp<CompWaterPoweredGasTrader>();
         }
         public override void CompTick()
         {
             base.CompTick();
-            if (compPower.PowerOutput > 0)
+            if ((compPower != null && compPower.PowerOutput > 0) || (compGas != null && (compGas.GasOn || compGas.WantsToBeOn)))
             {
                 compPipe.pipeNet.PullWater(Props.waterPerTick, out _);
             }

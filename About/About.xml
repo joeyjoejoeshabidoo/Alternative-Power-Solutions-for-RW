@@ -22,6 +22,11 @@
 			<displayName>Expanded Materials - Metals</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>vanillaexpanded.vfepower</packageId>
+			<displayName>Vanilla Furniture Expanded - Power</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2062943477</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>brrainz.harmony</li> 
@@ -30,6 +35,7 @@
 		<li>Ludeon.RimWorld.Ideology</li>       
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Argon.VMEu</li>
+		<li>vanillaexpanded.vfepower</li>
 	</loadAfter>
 	<description>Alternative power plants to keep the lights on as long as you keep the water running.</description>
 </ModMetaData>
